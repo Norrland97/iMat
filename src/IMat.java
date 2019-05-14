@@ -5,6 +5,7 @@ public class IMat {
         IMatDataHandler dataHandler = IMatDataHandler.getInstance();
         System.out.println("Hej");
         System.out.println("Pontus e fett");
+        System.out.println("Hentoo e brett med fett");
         
 
     }
