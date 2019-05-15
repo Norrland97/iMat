@@ -14,8 +14,9 @@ public class iMatBackendController {
 
     IMatDataHandler iMatData = IMatDataHandler.getInstance();
 
-    public List<Product> getProducts (){
+    public List<Product> getProducts(){
 
+        return null;
     }
 
 
