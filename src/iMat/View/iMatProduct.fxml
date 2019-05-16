@@ -10,16 +10,16 @@
 
 <AnchorPane prefHeight="240.0" prefWidth="180.0" stylesheets="@../Styles/ProductStyleSheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iMat.Controller.iMatProductController">
    <children>
-      <Button fx:id="infoKnapp" mnemonicParsing="false" styleClass="productButton" text="Mer info" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Button id="infoButton" fx:id="infoKnapp" mnemonicParsing="false" styleClass="productButton" text="Mer info" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0" />
       <ImageView fx:id="imageField" fitHeight="150.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <image>
             <Image url="@../../imatresources/images/product_155.png" />
          </image></ImageView>
-      <Button fx:id="lesserButton" maxHeight="45.0" maxWidth="45.0" minHeight="45.0" minWidth="45.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" styleClass="productButton" text="-" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="0.0" />
-      <Button fx:id="moreButton" layoutX="10.0" layoutY="10.0" maxHeight="45.0" maxWidth="45.0" minHeight="45.0" minWidth="45.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" styleClass="productButton" text="+" AnchorPane.bottomAnchor="45.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0" />
-      <Button fx:id="addToCartButton" mnemonicParsing="false" styleClass="productButton" text="Lägg i Varukorg" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="195.0" />
-      <TextField fx:id="nrOfItems" text="1" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0" AnchorPane.topAnchor="150.0" />
-      <Text fx:id="productText" stroke="WHITE" strokeLineCap="BUTT" strokeType="OUTSIDE" text="Piggelin" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="0.0">
+      <Button id="lesserButton" fx:id="lesserButton" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" styleClass="productButton" text="-" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="5.0" />
+      <Button id="moreButton" fx:id="moreButton" layoutX="10.0" layoutY="10.0" maxHeight="35.0" maxWidth="35.0" minHeight="35.0" minWidth="35.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="35.0" styleClass="productButton" text="+" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="5.0" />
+      <Button id="addToCartButton" fx:id="addToCartButton" maxHeight="30.0" minHeight="30.0" mnemonicParsing="false" prefHeight="30.0" styleClass="productButton" text="Lägg i Varukorg" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" />
+      <TextField fx:id="nrOfItems" text="1" AnchorPane.bottomAnchor="53.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0" />
+      <Text fx:id="productText" stroke="WHITE" strokeLineCap="BUTT" strokeType="OUTSIDE" text="Piggelin" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
          <font>
             <Font size="24.0" />
          </font>
