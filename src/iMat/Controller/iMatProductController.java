@@ -20,6 +20,9 @@ public class iMatProductController extends AnchorPane {
     private Button moreButton;
 
     @FXML
+    private Button infoKnapp;
+
+    @FXML
     private Button addToCartButton;
 
     @FXML
