@@ -1,5 +1,6 @@
 package iMat.Controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
@@ -34,6 +35,8 @@ public class iMatProductController extends AnchorPane {
     @FXML
     private Text productText;
 
+
+
     private iMatMainController parentController;
     private Product product;
 
@@ -51,5 +54,6 @@ public class iMatProductController extends AnchorPane {
         this.product = product;
         this.parentController = iMatMainController;
     }
+
 }
 
