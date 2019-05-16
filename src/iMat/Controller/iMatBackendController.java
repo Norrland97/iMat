@@ -5,8 +5,8 @@ import se.chalmers.cse.dat216.project.ProductCategory;
 
 public class iMatBackendController {
 
-    ProductCategory category;
-
+    ProductCategory actualCategory;
+    String category;
 
 
     IMatDataHandler iMatData = IMatDataHandler.getInstance();
