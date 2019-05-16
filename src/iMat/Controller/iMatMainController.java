@@ -13,7 +13,7 @@ public class iMatMainController {
 
     private Map<String, iMatProductController> recipeListItemMap = new HashMap<String, iMatProductController>();
     @FXML
-    FlowPane productsFlowPane
+    FlowPane productsFlowPane;
 
 
 
