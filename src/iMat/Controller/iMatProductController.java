@@ -6,6 +6,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
 import javax.swing.text.html.ImageView;
+import javax.xml.soap.Text;
 
 public class iMatProductController extends AnchorPane {
 
@@ -23,4 +24,8 @@ public class iMatProductController extends AnchorPane {
 
     @FXML
     private TextField nrOfItems;
+
+    @FXML
+    private Text productText;
+    
 }
