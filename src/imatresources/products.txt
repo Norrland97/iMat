@@ -152,3 +152,4 @@
 152;CABBAGE;Ekologisk blomkål;41.35;Kr/kg;product_152.jpg;end
 153;CABBAGE;Ekologisk brysselkål;15.75;Kr/kg;product_153.jpg;end
 154;DAIRIES;Ekologiska ägg;15.95;Kr/förp;product_154.jpg;end
+154;COLD_DRINKS;Piggelin;6.0;Kr/förp;product_155.jpg;end

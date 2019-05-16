@@ -27,5 +27,5 @@ public class iMatProductController extends AnchorPane {
 
     @FXML
     private Text productText;
-    
+
 }
