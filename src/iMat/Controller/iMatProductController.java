@@ -1,7 +1,10 @@
 package iMat.Controller;
 
+<<<<<<< HEAD
 import iMat.iMat;
 import javafx.event.ActionEvent;
+=======
+>>>>>>> parent of ca2c8b4... commit
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
@@ -33,7 +36,10 @@ public class iMatProductController extends AnchorPane {
     @FXML
     private Text productText;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of ca2c8b4... commit
     private iMatMainController parentController;
     private Product product;
 
@@ -51,6 +57,5 @@ public class iMatProductController extends AnchorPane {
         this.product = product;
 
     }
-
 }
 
