@@ -52,13 +52,5 @@ public class iMatProductController extends AnchorPane {
 
     }
 
-
-    public static void setcostLabel(String s) {
-        //TODO
-    }
-
-    public static void setItemsLabel(String s) {
-        //TODO
-    }
 }
 
