@@ -14,30 +14,23 @@ import se.chalmers.cse.dat216.project.Product;
 import java.io.IOException;
 
 public class iMatProductController extends AnchorPane {
+
     @FXML
     private ImageView imageField;
-
     @FXML
     private ImageView favoriteStar;
-
     @FXML
     private Button lesserButon;
-
     @FXML
     private Button moreButton;
-
     @FXML
     private Button infoKnapp;
-
     @FXML
     private Button addToCartButton;
-
     @FXML
     private TextField nrOfItems;
-
     @FXML
     private Text productText;
-
 
 
     private iMatMainController parentController;
@@ -58,5 +51,13 @@ public class iMatProductController extends AnchorPane {
         this.parentController = iMatMainController;
     }
 
+
+    public static void setcostLabel(String s) {
+        //TODO
+    }
+
+    public static void setItemsLabel(String s) {
+        //TODO
+    }
 }
 

@@ -3,16 +3,18 @@ package iMat.Controller;
 
 import iMat.Model.iMatModel;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.layout.FlowPane;
-import se.chalmers.cse.dat216.project.CreditCard;
-import se.chalmers.cse.dat216.project.IMatDataHandler;
-import se.chalmers.cse.dat216.project.Product;
+import se.chalmers.cse.dat216.project.*;
 
 import java.awt.*;
+import java.net.URL;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.ResourceBundle;
 
-public class iMatMainController {
+public class iMatMainController implements Initializable, ShoppingCartListener {
 
 
     private Map<String, iMatProductController> recipeListItemMap = new HashMap<String, iMatProductController>();
@@ -22,9 +24,9 @@ public class iMatMainController {
     private final iMatModel model = iMatModel.getInstance();
 
 
-    private void updateRecipeList(){
+    private void updateProductList(List<Product> products){
         productsFlowPane.getChildren().clear();
-        for(Product product : IMatDataHandler.getInstance().getProducts()){
+        for( Product product : products){
             productsFlowPane.getChildren().add(recipeListItemMap.get(product.getName()));
         }
     }
@@ -33,7 +35,7 @@ public class iMatMainController {
 
         CreditCard card = model.getCreditCard();
 
-        card.setCardNumber(numberTextField.getText());
+        /*card.setCardNumber(numberTextField.getText());
         card.setHoldersName(nameTextField.getText());
 
         String selectedValue = (String) cardTypeCombo.getSelectionModel().getSelectedItem();
@@ -45,7 +47,35 @@ public class iMatMainController {
         selectedValue = (String) yearCombo.getSelectionModel().getSelectedItem();
         card.setValidYear(Integer.parseInt(selectedValue));
 
-        card.setVerificationCode(Integer.parseInt(cvcField.getText()));
+        card.setVerificationCode(Integer.parseInt(cvcField.getText()));*/
+
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        model.getShoppingCart().addShoppingCartListener(this);
+
+        updateProductList(model.getProducts());
+        updateBottomPanel();
+
+        setupAccountPane();
+    }
+
+    private void setupAccountPane() {
+
+    }
+
+    private void updateBottomPanel() {
+        ShoppingCart shoppingCart = model.getShoppingCart();
+
+        //TODO - Fixa metoder
+        //setNumberOfItems("Antal varor: " + shoppingCart.getItems().size());
+        //setTotalCosttLabel("Kostnad: " + String.format("%.2f",shoppingCart.getTotal()));
+
+    }
+
+    @Override
+    public void shoppingCartChanged(CartEvent cartEvent) {
 
     }
 }

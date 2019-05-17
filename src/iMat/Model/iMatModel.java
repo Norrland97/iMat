@@ -2,9 +2,12 @@ package iMat.Model;
 
 import se.chalmers.cse.dat216.project.CreditCard;
 import se.chalmers.cse.dat216.project.IMatDataHandler;
+import se.chalmers.cse.dat216.project.Product;
+import se.chalmers.cse.dat216.project.ShoppingCart;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class iMatModel {
 
@@ -34,5 +37,13 @@ public class iMatModel {
 
     public CreditCard getCreditCard() {
         return iMatDataHandler.getCreditCard();
+    }
+
+    public ShoppingCart getShoppingCart() {
+        return iMatDataHandler.getShoppingCart();
+    }
+
+    public List<Product> getProducts() {
+        return iMatDataHandler.getProducts();
     }
 }
