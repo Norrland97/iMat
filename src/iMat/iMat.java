@@ -15,6 +15,7 @@ public class iMat extends Application {
     public void start(Stage stage) throws Exception {
 
         ResourceBundle bundle = java.util.ResourceBundle.getBundle("iMat/resources/iMat");
+        System.out.println(getClass().getResource("View/iMat.fxml"));
         Parent root = FXMLLoader.load(getClass().getResource("View/iMat.fxml"), bundle);
         Scene scene = new Scene(root, 1280, 720);
         stage.setScene(scene);
@@ -26,11 +27,11 @@ public class iMat extends Application {
     /**
      * @param args the command line arguments
      */
-    /*
+
     public static void main(String[] args) {
         launch(args);
     }
-    */
+
 }
 
 

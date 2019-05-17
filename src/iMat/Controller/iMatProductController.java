@@ -1,16 +1,17 @@
 package iMat.Controller;
 
+import iMat.iMat;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 import se.chalmers.cse.dat216.project.IMatDataHandler;
 import se.chalmers.cse.dat216.project.Product;
 
-import javax.swing.text.html.ImageView;
-import javax.xml.soap.Text;
 import java.io.IOException;
 
 public class iMatProductController extends AnchorPane {
@@ -40,8 +41,8 @@ public class iMatProductController extends AnchorPane {
     private iMatMainController parentController;
     private Product product;
 
-    public iMatProductController(Product product, iMatMainController iMatMainController){
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("iMatProduct.fxml"));
+    public iMatProductController(Product product){
+        FXMLLoader fxmlLoader = new FXMLLoader(iMat.class.getResource("View/iMatProduct.fxml"));
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
 
@@ -52,7 +53,7 @@ public class iMatProductController extends AnchorPane {
         }
 
         this.product = product;
-        this.parentController = iMatMainController;
+
     }
 
 }
