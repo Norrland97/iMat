@@ -2,8 +2,11 @@ package iMat.Controller;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import iMat.iMat;
 import javafx.event.ActionEvent;
+=======
+>>>>>>> parent of ca2c8b4... commit
 =======
 >>>>>>> parent of ca2c8b4... commit
 =======
@@ -41,7 +44,10 @@ public class iMatProductController extends AnchorPane {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of ca2c8b4... commit
 =======
 >>>>>>> parent of ca2c8b4... commit
 =======
